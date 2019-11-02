@@ -40,10 +40,10 @@
                 [style.margin.px]="imageMargin"
               />
             </td>
-            <td>{{ product.productName }}</td>
+            <td>{{ product.productName | uppercase }}</td>
             <td>{{ product.productCode }}</td>
             <td>{{ product.productDate }}</td>
-            <td>{{ product.price }}</td>
+            <td>{{ product.price | currency: "EUR":"symbol":"1.2-2" }}</td>
             <td>{{ product.rating }}</td>
           </tr>
         </tbody>
