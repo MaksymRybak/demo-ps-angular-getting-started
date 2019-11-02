@@ -25,7 +25,8 @@
             </th>
             <th>Product</th>
             <th>Code</th>
-            <th>Available</th>
+            <th>Description</th>
+            <th>Price</th>
             <th>5 Star Rating</th>
           </tr>
         </thead>
@@ -46,7 +47,9 @@
             <td>{{ product.productCode | convertToSpaces: "-" }}</td>
             <td>{{ product.description }}</td>
             <td>{{ product.price | currency: "EUR":"symbol":"1.2-2" }}</td>
-            <td>{{ product.starRating }}</td>
+            <td>
+              <pm-star [rating]="product.starRating"></pm-star>
+            </td>
           </tr>
         </tbody>
       </table>
