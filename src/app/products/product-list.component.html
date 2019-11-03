@@ -42,7 +42,9 @@
               />
             </td>
             <td>
-              {{ product.productName | uppercase }}
+              <a [routerLink]="['/products', product.productId]">{{
+                product.productName | uppercase
+              }}</a>
             </td>
             <td>{{ product.productCode | convertToSpaces: "-" }}</td>
             <td>{{ product.description }}</td>
