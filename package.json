@@ -1,6 +1,10 @@
 {
   "name": "apm",
   "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/MaksymRybak/demo-ps-angular-getting-started.git",
+  "author": "rybak.maksym@gmail.com",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
@@ -22,7 +26,6 @@
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
     "rxjs": "~6.4.0",
-    "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
@@ -45,9 +48,5 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
-  },
-  "main": "index.js",
-  "repository": "https://github.com/MaksymRybak/demo-ps-angular-getting-started.git",
-  "author": "rybak.maksym@gmail.com",
-  "license": "MIT"
+  }
 }
